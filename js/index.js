@@ -85,4 +85,23 @@ mainText[7].textContent = "sales@greatidea.io"
 
 mainText[8].textContent = "Copyright Great Idea! 2018"
 
+const newNavColor = document.querySelectorAll("header nav a");
+newNavColor.forEach(navText => {
+  navText.style.color = "green";
+});
+
+
+const navEl = document.querySelector("header nav");
+const lastNav = document.createElement("a");
+lastNav.textContent = "Last";
+navEl.appendChild(lastNav);
+
+
+const firstNav = document.createElement("a");
+firstNav.textContent = "First";
+navEl.prepend(firstNav);
+
+
+
+
 
